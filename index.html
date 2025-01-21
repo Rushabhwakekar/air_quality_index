@@ -4,38 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Quality Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px 30px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4facfe;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background: #4facfe;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background: #00c6fb;
+        }
+    </style>
 </head>
 <body>
-    <h1>Air Quality Prediction API</h1>
-    <form action="/predict" method="POST">
-        <label for="pm25">PM2.5:</label>
-        <input type="text" id="pm25" name="PM2.5"><br><br>
+    <div class="container">
+        <h1>Air Quality Prediction</h1>
+        <form action="/predict" method="POST">
+            <label for="pm25">PM2.5:</label>
+            <input type="text" id="pm25" name="PM2.5">
 
-        <label for="pm10">PM10:</label>
-        <input type="text" id="pm10" name="PM10"><br><br>
+            <label for="pm10">PM10:</label>
+            <input type="text" id="pm10" name="PM10">
 
-        <label for="no">NO:</label>
-        <input type="text" id="no" name="NO"><br><br>
+            <label for="no">NO:</label>
+            <input type="text" id="no" name="NO">
 
-        <label for="no2">NO2:</label>
-        <input type="text" id="no2" name="NO2"><br><br>
+            <label for="no2">NO2:</label>
+            <input type="text" id="no2" name="NO2">
 
-        <label for="nox">NOx:</label>
-        <input type="text" id="nox" name="NOx"><br><br>
+            <label for="nox">NOx:</label>
+            <input type="text" id="nox" name="NOx">
 
-        <label for="nh3">NH3:</label>
-        <input type="text" id="nh3" name="NH3"><br><br>
+            <label for="nh3">NH3:</label>
+            <input type="text" id="nh3" name="NH3">
 
-        <label for="co">CO:</label>
-        <input type="text" id="co" name="CO"><br><br>
+            <label for="co">CO:</label>
+            <input type="text" id="co" name="CO">
 
-        <label for="so2">SO2:</label>
-        <input type="text" id="so2" name="SO2"><br><br>
+            <label for="so2">SO2:</label>
+            <input type="text" id="so2" name="SO2">
 
-        <label for="o3">O3:</label>
-        <input type="text" id="o3" name="O3"><br><br>
+            <label for="o3">O3:</label>
+            <input type="text" id="o3" name="O3">
 
-        <input type="submit" value="Submit">
-    </form>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
