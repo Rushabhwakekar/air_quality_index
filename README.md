@@ -12,3 +12,19 @@ The datasets for this project were collected from the following sources:
 [Mendeley Data Repository](https://data.mendeley.com/datasets/43sfz58vn7/1)
 
 The data was collected using web scraping techniques from the sources mentioned above. After initial collection, multiple files were combined and preprocessed to create a unified dataset suitable for analysis and machine learning tasks.
+
+Links For Files and Model
+
+Preprocessing - https://github.com/Rushabhwakekar/air_quality_index/blob/main/air_quality_index_preprocessed.ipynb
+
+Visualization - https://github.com/Rushabhwakekar/air_quality_index/blob/main/The%20Mavericks.pbit
+
+ML Model - https://github.com/Rushabhwakekar/air_quality_index/blob/main/air_quality_index_ml_model.ipynb
+
+Deployed Model
+Frontend - https://github.com/Rushabhwakekar/air_quality_index/blob/main/index.html
+Backend - https://github.com/Rushabhwakekar/air_quality_index/blob/main/app.py
+ML model - https://github.com/Rushabhwakekar/air_quality_index/blob/main/Primary%20Pollutant_model.pkl
+
+Final Report
+https://github.com/Rushabhwakekar/air_quality_index/blob/main/Team%20Mavericks%20Document.pdf
